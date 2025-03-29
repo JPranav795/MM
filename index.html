@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Mixer</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Music Mixer</h1>
+        <div class="instruments">
+            <div class="instrument" draggable="true" data-audio="audio/drum.mp3">
+                <img src="images/drum.png" alt="Drum">
+            </div>
+            <div class="instrument" draggable="true" data-audio="audio/bass.mp3">
+                <img src="images/bass.png" alt="Bass">
+            </div>
+            <div class="instrument" draggable="true" data-audio="audio/guitar.mp3">
+                <img src="images/guitar.png" alt="Guitar">
+            </div>
+            <div class="instrument" draggable="true" data-audio="audio/piano.mp3">
+                <img src="images/piano.png" alt="Piano">
+            </div>
+            <div class="instrument" draggable="true" data-audio="audio/trumpet.mp3">
+                <img src="images/trumpet.png" alt="Trumpet">
+            </div>
+            <div class="instrument" draggable="true" data-audio="audio/violin.mp3">
+                <img src="images/violin.png" alt="Violin">
+            </div>
+        </div>
+        <div id="drop-zone" class="drop-zone">
+            <p>Drop instruments here to mix</p>
+        </div>
+        <div id="audio-list" class="audio-list">
+            <!-- Loaded audio clips will appear here -->
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
