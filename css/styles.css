@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.instruments {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; 
+    margin-bottom: 20px;
+}
+
+.instrument {
+    width: 80px;
+    height: 80px;
+    background-color: #007bff;
+    border-radius: 10px;
+    cursor: move;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+}
+
+.instrument:hover {
+    transform: scale(1.1); 
+}
+
+.instrument img {
+    width: 60px; 
+    height: 60px;
+    object-fit: contain; 
+}
+
+.drop-zone {
+    width: 300px;
+    height: 150px;
+    border: 2px dashed #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+    transition: background-color 0.3s;
+}
+
+.drop-zone.dragover {
+    background-color: #e0e0e0;
+}
+
+.drop-zone p {
+    color: #666;
+}
+
+.audio-list {
+    margin: 20px 0;
+}
+
+.audio-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    width: 300px;
+}
