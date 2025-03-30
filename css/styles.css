@@ -20,8 +20,8 @@ body {
     text-align: center;
     padding: 20px;
     background-color: #00f400;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 255, 174, 0.1);
 }
 
 h1 {
@@ -41,7 +41,7 @@ h1 {
     width: 80px;
     height: 80px;
     background-color: #0015ff;
-    border-radius: 10px;
+    border-radius: 30px;
     cursor: move;
     user-select: none;
     display: flex;
@@ -52,6 +52,13 @@ h1 {
 
 .instrument:hover {
     transform: scale(1.1); 
+    animation: shake 0.3s ease-in-out infinite;
+}
+
+@keyframes shake {
+    0% { transform: scale(1.1) translateX(-2px); }
+    50% { transform: scale(1.1) translateX(2px); }
+    100% { transform: scale(1.1) translateX(-2px); }
 }
 
 .instrument img {
