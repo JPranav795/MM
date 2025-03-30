@@ -19,7 +19,7 @@ body {
 .container {
     text-align: center;
     padding: 20px;
-    background-color: #fff;
+    background-color: #00f400;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -40,7 +40,7 @@ h1 {
 .instrument {
     width: 80px;
     height: 80px;
-    background-color: #007bff;
+    background-color: #0015ff;
     border-radius: 10px;
     cursor: move;
     user-select: none;
@@ -63,7 +63,7 @@ h1 {
 .drop-zone {
     width: 300px;
     height: 150px;
-    border: 2px dashed #666;
+    border: 2px dashed #2f00fe;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,7 +76,7 @@ h1 {
 }
 
 .drop-zone p {
-    color: #666;
+    color: #4402fa;
 }
 
 .audio-list {
@@ -88,7 +88,7 @@ h1 {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: #f9f9f9;
+    background-color: #c30a0a;
     border: 1px solid #ddd;
     margin-bottom: 10px;
     width: 300px;
